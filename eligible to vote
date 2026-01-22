@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+
+    // Ask user for age
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    // Check eligibility
