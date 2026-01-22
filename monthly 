@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float rent, groceries, utilities, transport, others, total;
+
+    // Input monthly expenses
+    printf("Enter rent amount: ");
+    scanf("%f", &rent);
+
+    printf("Enter groceries amount: ");
+    scanf("%f", &groceries
