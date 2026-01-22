@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char password[100];
+    int i, hasUpper = 0, hasLower = 0, hasDigit = 0;
+
+    printf("Enter password: ");
+    scanf("%s", password);
+
+    // Check each character
+    for(i = 0; password[i] != '\0'; i++) {
+        if(isupper(password[i])) hasUpper = 1;
+        if(islower(password[i])) hasLower = 1;
+        if(isdigit(password[i])) hasDigit = 1;
+    }
