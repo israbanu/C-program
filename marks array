@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    // Ask user for the number of students
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+
+    int marks[n];  // Array to store marks
+
+    // Input marks
+    for (i = 0; i < n; i++) {
+        printf("Enter marks for student %d: ", i + 1);
+        scanf("%d", &marks[i]);
+    }
+
+    // Display marks
+    printf("\nMarks of students:\n");
+    for (
