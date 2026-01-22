@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float price;
+    int found = 0;
+
+    printf("Enter number of items: ");
+    scanf("%d", &n);
+
+    float prices[n];
+
+    // Input prices
+    for (i =
