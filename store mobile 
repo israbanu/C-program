@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct Mobile {
+    char brand[20];
+    char model[20];
+    int price;
+};
+
+int main() {
+    struct Mobile m;
+
+    // Input mobile details
+    printf("Enter Mobile Brand: ");
+    scanf("%s", m.brand);
+
+    printf("Enter Mobile Model: ");
+    scanf("%s", m.model);
+
+    printf("Enter Mobile Price: ");
+    scanf("%d", &m.price);
+
+    // Display mobile details
+    printf("\n--- Mobile Details ---\n");
+    printf("Brand : %s\n", m.brand);
+    printf("Model : %s\n", m.model);
+    printf("Price : %d\n", m.price);
