@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *file;
+    char username[50], password[50];
+
+    // Open file in append mode (creates file if it doesn't exist)
+    file = fopen("logins.txt", "a");
+    if (file == NULL) {
+        printf("Unable to open file.\n");
+        return 1;
+    }
+
+    // Get login details from user
+    printf("Enter username: ");
+    scanf("%s", username);
+    printf
