@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Define a structure to hold course details
+struct Course {
+    char courseName[50];
+    char courseCode[20];
+    int credits;
+};
+
+int main() {
+    struct Course course;
+
+    // Input course details
+    printf("Enter course name: ");
+    fgets(course.courseName, sizeof(course.courseName), stdin);
+
+    printf("Enter course code: ");
+    scanf("%s", course.courseCode);
+
+    printf("Enter number of credits: ");
+    scanf("%d", &course.credits);
+
+    // Display course details
+    printf("\nCourse Details:\n");
+    printf("Name   : %s", course.courseName); // fgets keeps newline
+    printf("Code   : %s\n",
