@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+    char name[50];
+    int m1, m2, m3;
+    int total;
+};
+
+int main() {
+    struct Student s;
+
+    printf("Enter Roll Number: ");
+    scanf("%d", &s.roll);
+
+    printf("Enter Name: ");
+    scanf("%s", s.name);
+
+    printf("Enter Marks in 3 Subjects:\n");
+    scanf("%d %d %d", &s.m1, &s.m2, &s.m3);
+
+    s.total = s.m1 + s.m2 + s.m3;
+
+    printf("\n--- Student Details ---\n");
+    printf("Roll No: %d\n", s.roll);
+    printf("Name: %s\n", s.name);
+    printf("Marks: %
