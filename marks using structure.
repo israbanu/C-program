@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// Define a structure to store marks
+struct Student {
+    char name[50];
+    int marks1;
+    int marks2;
+    int marks3;
+    int total;
+};
+
+int main() {
+    struct Student s;
+
+    // Input student details
+    printf("Enter student name: ");
+    scanf("%s", s.name);
+
+    printf("Enter marks for subject 1: ");
+    scanf("%d", &s.marks1);
+
+    printf("Enter marks for subject 2: ");
+    scanf("%d", &s.marks2);
+
+    printf("Enter marks for subject 3: ");
+    scanf("%d", &s.marks3);
+
+    // Calculate total marks
+    s.total = s.marks1 + s.marks2 + s.marks3;
+
+    // Display the result
+    printf("\nStudent Name: %s\n", s.name);
+    printf("Total Marks: %d\n", s.total);
+
+    return 0;
+}
