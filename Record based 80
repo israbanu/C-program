@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct Student {
+    int id;
+    char name[30];
+    int marks;
+};
+
+int main() {
+    struct Student s[5];
+    int n, i, searchId, found = 0;
+
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+
+    // Input student
