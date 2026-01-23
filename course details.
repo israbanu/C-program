@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct Course {
+    int courseId;
+    char courseName[50];
+    char instructor[50];
+    int duration;   // in weeks
+};
+
+int main() {
+    struct Course c;
+
+    // Input course details
+    printf("Enter Course ID: ");
+    scanf("%d", &c.courseId
