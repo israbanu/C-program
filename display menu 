@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void displayMenu();   // Function declaration
+
+int main()
+{
+    displayMenu();   // Function call
+    return 0;
+}
+
+// Function definition
+void displayMenu()
+{
+    printf("===== MENU =====\n");
+    printf("1. Addition\n");
+    printf("2. Subtraction\n");
+    printf
