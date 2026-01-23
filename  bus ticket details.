@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+// Define a structure for Bus Ticket
+struct BusTicket {
+    char passengerName[50];
+    int age;
+    char gender;
+    char source[50];
+    char destination[50];
+    char date[20];
+    int seatNumber;
+    float fare;
+};
+
+int main() {
+    struct BusTicket ticket;
+
+    // Input bus ticket details
+    printf("Enter passenger name: ");
+    scanf(" %[^\n]", ticket.passengerName);
+
+    printf("Enter age: ");
+    scanf("%d", &ticket.age);
+
+    printf("Enter gender (M/F): ");
+    scanf(" %c", &ticket.gender);
+
+    printf("Enter source: ");
+    scanf(" %[^\n]", ticket.source);
+
+    printf("Enter destination: ");
+    scanf(" %[^\n]", ticket.destination);
+
+    printf("Enter date of journey (DD/MM/YYYY): ");
+    scanf(" %[^\n]", ticket.date);
+
+    printf("Enter seat number: ");
+    scanf("%d", &ticket.seatNumber);
+
+    printf("Enter fare: ");
+    scanf("%f", &ticket.fare);
+
+    // Display bus ticket details
+    printf("\n------ Bus Ticket Details ------\n");
+    printf("Passenger Name : %s\n", ticket.passengerName);
+    printf("Age            : %d\n", ticket.age);
+    printf("Gender         : %c\n", ticket.gender);
+    printf("Source         : %s\n", ticket.source);
+    printf("Destination    : %s\n", ticket.destination);
+    printf("Date of Journey: %s\n", ticket.date);
+    printf("Seat Number    : %d\n", ticket.seatNumber);
+    printf("Fare           : %.2f\n", ticket.fare);
+
+    return 0;
+}
