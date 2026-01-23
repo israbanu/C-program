@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+struct BankAccount {
+    int accNo;
+    char name[50];
+    float balance;
+};
+
+void display(struct BankAccount acc) {
+    printf("\n--- Account Details ---\n");
+    printf("Account No: %d\n", acc.accNo);
+    printf("Name: %s\n", acc.name);
+    printf("Balance: %.2f\n", acc.balance);
+}
+
+float deposit(float bal, float amt) {
+    return bal + amt;
+}
+
+float withdraw(float bal, float amt) {
+    if (amt > bal) {
+        printf("\nInsufficient Balance!\n");
+        return bal;
+    }
+    return bal - amt;
+}
+
+int main() {
+    struct BankAccount acc;
+    int choice;
+    float amt;
+
+    // Input account details
+    printf("Enter Account Number: ");
+    scanf("%d", &acc.accNo);
+
+    printf("Enter Name: ");
+    scanf(" %[^\n]", acc.name);
+
+    printf("Enter Opening Balance: ");
+    scanf("%f", &acc.balance);
+
+    do {
+        printf("\n--- Bank
