@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int findMax(int a, int b);   // Function declaration
+
+int main()
+{
+    int num1, num2, max;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    max = findMax(num1, num2);
