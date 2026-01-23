@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+float calculateBill(float price, int quantity)
+{
+    float total;
+    total = price * quantity;
+    return total;
+}
+
+int main()
+{
+    float price, bill;
+    int quantity;
+
+    printf("Enter price of item: ");
+    scanf("%f", &price);
+
+    printf("Enter quantity: ");
+    scanf("%d", &quantity);
+
+    bill = calculateBill(price, quantity);
+
+    printf("Total Bill Amount = %.2f\n", bill);
+
+    return 0;
+}
