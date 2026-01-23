@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Function to display menu
+void displayMenu()
+{
+    printf("------ MENU ------\n");
+    printf("1. Add\n");
+    printf("2. Subtract\n");
+    printf("3. Multiply\n");
+    printf("4. Divide\n");
+    printf("5. Exit\n");
+    printf("------------------\n");
+}
+
+int main()
+{
+    int choice;
+
+    // Call menu function
+    displayMenu();
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    printf("You selected option %d\n", choice);
+
+    return 0;
+}
