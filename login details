@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    char username[50], password[50];
+    FILE *fp;
+
+    fp = fopen("login.txt", "a");   // Open file in append mode
+
+    if (fp == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+
+    printf("Enter Username: ");
+    scanf("%s", username);
+
+    printf("Enter Password: ");
+    scanf("%s", password);
+
+    fprintf(fp, "Username: %s\tPassword: %s\n", username, password);
+
+    fclose(fp);
+
+    printf("Login details saved successfully!\n");
+
+    return 0;
+}
