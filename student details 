@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    int roll;
+    float marks;
+};
+
+int main() {
+    struct Student s;
+    FILE *fptr;
+
+    // Open file in write mode
+    fptr = fopen("students.txt", "w");
+    if (fptr == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+
+    // Input student details
+    printf("Enter student name: ");
